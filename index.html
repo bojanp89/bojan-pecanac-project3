@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rap Ad-Lib Generator</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Rap Ad-Lib Generator <span>Turn your volume up!</span></h1>
+    </header>
+    <main>
+      <form action="submit">
+        <fieldset class="era">
+          <h2>Choose an era:</h2>
+          <select name="selectEra" id="" required>
+            <option value="2000">2000-2009</option>
+            <option value="2010">2010-2015</option>
+            <option value="present">2016-present</option>
+          </select>
+        </fieldset>
+        <fieldset class="region">
+          <h2>Choose a region:</h2>
+          <select name="selectRegion" id="" required>
+            <option value="east" name="region">East</option>
+            <option value="west">West</option>
+            <option value="south">South</option>
+          </select>
+        </fieldset>
+        <fieldset class="style">
+          <h2>Choose a style:</h2>
+          <select name="selectStyle" id="" required>
+              <!-- <option value="" selected disabled hidden></option> -->
+            <option value="aggressive">Aggressive</option>
+            <option value="cool">Cool</option>
+            <option value="abstract">Abstract</option>
+          </select>
+        </fieldset>
+        <input type="submit" value="Let's hear it!">
+      </form>
+    </main>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="scripts/script.js"></script>
+  </div>
+</body>
+</html>
