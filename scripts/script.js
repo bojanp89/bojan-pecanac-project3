@@ -2,181 +2,181 @@ const myApp = {};
 
 myApp.sounds = [
   {
-    sound: 'dmx bark',
-    era: 2000,
+    sound: 'dmx',
+    era: '2000',
     region: 'east',
     style: 'aggressive'
   },
   {
-    sound: 'ja rule its murda',
-    era: 2000,
+    sound: 'jarule',
+    era: '2000',
     region: 'east',
     style: 'aggressive',
   },
   {
-    sound: 'jay-z yessir',
-    era: 2000,
+    sound: 'jayzYessir',
+    era: '2000',
     region: 'east',
     style: 'cool'
   },
   {
     sound: 'camron',
-    era: 2000,
+    era: '2000',
     region: 'east',
     style: 'cool'
   },
   {
-    sound: 'odb shimmy',
-    era: 2000,
+    sound: 'odb',
+    era: '2000',
     region: 'east',
     style: 'abstract'
   },
   {
     sound: 'mop',
-    era: 2000,
+    era: '2000',
     region: 'east',
     style: 'abstract'
   },
   {
     sound: 'jadakiss',
-    era: 2000,
+    era: '2000',
     region: 'east',
     style: 'abstract'
   },
   {
-    sound: 'too short',
-    era: 2000,
+    sound: 'tooshort',
+    era: '2000',
     region: 'west',
     style: 'aggressive'
   },
   {
-    sound: 'nate dogg',
-    era: 2000,
+    sound: 'natedogg',
+    era: '2000',
     region: 'west',
     style: 'cool'
   },
   {
-    sound: 'snoop dogg',
-    era: 2000,
+    sound: 'snoopdogg',
+    era: '2000',
     region: 'west',
     style: 'abstract'
   },
   {
-    sound: 'lil jon',
-    era: 2000,
+    sound: 'liljon',
+    era: '2000',
     region: 'south',
     style: 'aggressive'
   },
   {
-    sound: 'pimp c',
-    era: 2000,
+    sound: 'pimpc',
+    era: '2000',
     region: 'south',
     style: 'cool'
   },
   {
-    sound: 'lil wayne',
-    era: 2000,
+    sound: 'lilwayne',
+    era: '2000',
     region: 'south',
     style: 'cool'
   },
   {
     sound: 'birdman',
-    era: 2000,
+    era: '2000',
     region: 'south',
     style: 'abstract'
   },
   {
     sound: 'gucci',
-    era: 2000,
+    era: '2000',
     region: 'south',
     style: 'abstract'
   },
   {
-    sound: 'swizz',
-    era: 2010,
+    sound: 'swizzbeats',
+    era: '2010',
     region: 'east',
     style: 'aggressive'
   },
   {
     sound: 'drake',
-    era: 2010,
+    era: '2010',
     region: 'east',
     style: 'cool'
   },
   {
-    sound: 'jay-z',
-    era: 2010,
+    sound: 'jayzItsYoBoy',
+    era: '2010',
     region: 'east',
     style: 'cool'
   },
   {
-    sound: 'french',
-    era: 2010,
+    sound: 'frenchmontana',
+    era: '2010',
     region: 'east',
     style: 'abstract'
   },
   {
-    sound: 'kendrick',
-    era: 2010,
+    sound: 'kendrickBiatch',
+    era: '2010',
     region: 'west',
     style: 'aggressive'
   },
   {
-    sound: 'ty dolla sign',
-    era: 2010,
+    sound: 'tydollasign',
+    era: '2010',
     region: 'west',
     style: 'cool'
   },
   {
-    sound: 'schoolboy q',
-    era: 2010,
+    sound: 'schoolboyq',
+    era: '2010',
     region: 'west',
     style: 'abstract'
   },
   {
-    sound: 'waka',
-    era: 2010,
+    sound: 'wakaflockaflame',
+    era: '2010',
     region: 'south',
     style: 'aggressive'
   },
   {
-    sound: '2 chainz tru',
-    era: 2010,
+    sound: '2chainzTru',
+    era: '2010',
     region: 'south',
     style: 'cool'
   },
   {
-    sound: 'juicy j stfu',
-    era: 2010,
+    sound: 'juicyjStfu',
+    era: '2010',
     region: 'south',
     style: 'abstract'
   },
   {
-    sound: 'meek mill',
+    sound: 'meekmill',
     era: 'present',
     region: 'east',
     style: 'aggressive'
   },
   {
-    sound: 'jay-z',
+    sound: 'jayzHov',
     era: 'present',
     region: 'east',
     style: 'cool'
   },
   {
-    sound: 'big sean',
+    sound: 'bigsean',
     era: 'present',
     region: 'east',
     style: 'cool'
   },
   {
-    sound: 'danny brown',
+    sound: 'dannybrown',
     era: 'present',
     region: 'east',
     style: 'abstract'
   },
   {
-    sound: 'kendrick',
+    sound: 'kendrickTooToo',
     era: 'present',
     region: 'west',
     style: 'aggressive'
@@ -188,19 +188,19 @@ myApp.sounds = [
     style: 'cool'
   },
   {
-    sound: 'dj mustard',
+    sound: 'djmustard',
     era: 'present',
     region: 'west',
     style: 'abstract'
   },
   {
-    sound: 'takeoff',
+    sound: 'takeoffBitch',
     era: 'present',
     region: 'south',
     style: 'aggressive'
   },
   {
-    sound: 'fetty wap',
+    sound: 'fettywap',
     era: 'present',
     region: 'south',
     style: 'cool'
@@ -212,7 +212,7 @@ myApp.sounds = [
     style: 'abstract'
   },
   {
-    sound: 'travis scott',
+    sound: 'travisscott',
     era: 'present',
     region: 'south',
     style: 'abstract'
@@ -223,12 +223,48 @@ $(function() {
 
   // submit the form & prevent default
   $('form').on('submit', (event) => {
+    console.log(this)
     event.preventDefault();
 
-    // gather all user inputs
-  let userEra = $('option[name=region]:selected').val();
-    console.log(userEra)
+  // gather user input data using the value attribute
+  let userEra = $('option[name=era]:selected').val();
+    // console.log(userEra)
+
+  let userRegion = $('option[name=region]:selected').val();
+    // console.log(userRegion)
+
+  let userStyle = $('option[name=style]:selected').val();
+    // console.log(userStyle)
+
+  // catch the object that matches every criteria and store them in a variable called userChoice
+    myApp.userChoiceArray = myApp.sounds.filter(function(sounds) {
+      return sounds.era === userEra && sounds.region === userRegion && sounds.style === userStyle;
+    })
+    // console.log(myApp.userChoiceArray)
+
+  // generate a random index value that will determine our final sound selection
+    const randomNum = Math.floor(Math.random() * myApp.userChoiceArray.length);
+    // console.log(randomNum);
+
+    let randomSound = myApp.userChoiceArray[randomNum];
+    // console.log(randomSound.sound)
+
+    var audio = new Audio(`audio/${randomSound.sound}.mp3`)
+    audio.play();
   })
+
+    
+
+  // var audio = new Audio('audio/camron_2.mp3');
+  // audio.play();
+
+  
+  
+
+  
+  
+
 
   
 })
+
