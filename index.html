@@ -1,48 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rap Ad-Lib Generator</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700|Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
   <div class="wrapper">
-    <header>
-      <h1>What rap ad-lib best describes you? <span>Turn your volume up!</span></h1>
-    </header>
+        <header>
+          <h1>Rap Ad-Lib <span>Generator</span></h1>
+          <i class="fas fa-volume-up"></i>
+          <h2>Turn up your volume!</h2>
+        </header>
+  </div>
     <main>
       <form action="submit">
-        <fieldset class="era">
-          <h2>What's your favourite hip-hop era?</h2>
-          <select name="selectEra" id="" required>
-            <option value="2000" name="era">2000-2009</option>
-            <option value="2010" name="era">2010-2015</option>
-            <option value="present" name="era">2016-present</option>
-          </select>
-        </fieldset>
-        <fieldset class="region">
-          <h2>What side you rep son?</h2>
-          <select name="selectRegion" id="" required>
-            <option value="east" name="region">East</option>
-            <option value="west" name="region">West</option>
-            <option value="south" name="region">South</option>
-          </select>
-        </fieldset>
-        <fieldset class="style">
-          <h2>What's your rap style?</h2>
-          <select name="selectStyle" id="" required>
+        <div class="firstSection section">
+          <div class="wrapper">
+          <fieldset class="era">
+            <h2>Select an era:</h2>
+            <select name="selectEra" id="" required>
+              <option value="2000" name="era">2000s</option>
+              <option value="2010" name="era">Early-Mid 2010s</option>
+              <option value="present" name="era">Present</option>
+            </select>
+          </fieldset>
+          <div class="gallery">
+            <div class="galleryItem">
+              <img src="assets/50cent.jpg" alt="50 cent posing with his hands together">
+              <div class="overlay">
+                <p class="textOverlay">2000s</p>
+              </div>
+            </div>
+            <div class="galleryItem"><img src="assets/drake.jpg" alt="drake with a tootpic">
+              <div class="overlay">
+                <p class="textOverlay drake">Early 2010s</p>
+              </div>
+            </div>
+            <div class="galleryItem"><img src="assets/migos.jpg" alt="all 3 members of migos posing">
+              <div class="overlay">
+                <p class="textOverlay">Present</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="secondSection section">
+          <div class="wrapper">
+          <fieldset class="region">
+            <h2>Choose a region:</h2>
+            <select name="selectRegion" id="" required>
+              <option value="east" name="region">East</option>
+              <option value="west" name="region">West</option>
+              <option value="south" name="region">South</option>
+            </select>
+          </fieldset>
+          <div class="gallery">
+            <div class="galleryItem"><img src="assets/nas2.jpg" alt="jadakiss posing">
+              <div class="overlay">
+                <p class="textOverlay">East</p>
+              </div>
+            </div>
+            <div class="galleryItem"><img src="assets/snoopdogg.jpg" alt="snoop dogg posing">
+              <div class="overlay">
+                <p class="textOverlay">West</p>
+              </div>
+            </div>
+            <div class="galleryItem"><img src="assets/outkast2.jpg" alt="members of cash money millionaires posing">
+              <div class="overlay">
+                <p class="textOverlay">South</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="thirdSection section">
+          <div class="wrapper">
+          <fieldset class="style">
+            <h2>Choose a style:</h2>
+            <select name="selectStyle" id="" required>
               <!-- <option value="" selected disabled hidden></option> -->
-            <option value="aggressive" name="style">Aggressive</option>
-            <option value="cool" name="style">Cool</option>
-            <option value="abstract" name="style">Abstract</option>
-          </select>
-        </fieldset>
+              <option value="aggressive" name="style">Aggressive</option>
+              <option value="relaxed" name="style">Relaxed</option>
+              <option value="abstract" name="style">Abstract</option>
+            </select>
+          </fieldset>
+          <div class="gallery">
+            <div class="galleryItem"><img src="assets/wakaflocka.jpg" alt="waka flocka flame posing with crossed arms">
+              <div class="overlay">
+                <p class="textOverlay textAggressive">Aggressive</p>
+              </div>
+            </div>
+            <div class="galleryItem"><img src="assets/jayzsuit.jpg" alt="pimp c posing">
+              <div class="overlay">
+                <p class="textOverlay">Cool</p>
+              </div>
+            </div>
+            <div class="galleryItem"><img src="assets/desiigner.jpg" alt="gucci mane doing a universal sign for money">
+              <div class="overlay">
+                <p class="textOverlay">Abstract</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
         <input type="submit" value="Let's hear it!">
       </form>
     </main>
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+      integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
     <script src="scripts/script.js"></script>
-  </div>
 </body>
+
 </html>
