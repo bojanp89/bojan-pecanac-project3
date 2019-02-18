@@ -227,13 +227,12 @@ $(function () {
 
     // every time we "submit", run the following code:
 
-
     // gather user input data by the value attribute
-    let userEra = $('option[name=era]:selected').val();
+    let userEra = $('input[name=era]:checked').val();
 
-    let userRegion = $('option[name=region]:selected').val();
+    let userRegion = $('input[name=region]:checked').val();
 
-    let userStyle = $('option[name=style]:selected').val();
+    let userStyle = $('input[name=style]:checked').val();
 
     // catch the object in the sounds array that matches the user's input and store it's content in an object called usersChoiceArray
     myApp.userChoiceArray = myApp.sounds.filter(function (sounds)
