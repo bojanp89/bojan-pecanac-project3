@@ -14,109 +14,123 @@
 
 <body>
   <div class="wrapper">
-        <header>
-          <h1>Rap Ad-Lib <span>Generator</span></h1>
-          <i class="fas fa-volume-up"></i>
-          <h2>Turn up your volume!</h2>
-        </header>
+    <header>
+      <h1>Rap Ad-Lib <span>Generator</span></h1>
+      <i class="fas fa-volume-up"></i>
+      <!-- <h2>Turn up your volume!</h2> -->
+    </header>
   </div>
-    <main>
-      <form action="submit">
-        <div class="firstSection section">
-          <div class="wrapper">
+  <main>
+    <form action="submit">
+      <div class="firstSection section">
+        <div class="wrapper">
           <fieldset class="era">
             <h2>Select an era:</h2>
-            <select name="selectEra" id="" required>
-              <option value="2000" name="era">2000s</option>
-              <option value="2010" name="era">Early-Mid 2010s</option>
-              <option value="present" name="era">Present</option>
-            </select>
+            <input type="radio" name="era" value="2000" id="2000">
+            <input type="radio" name="era" value="2010" id="2010">
+            <input type="radio" name="era" value="present" id="present">
+            <div class="gallery galleryOne">
+              <label for="2000">
+                <div class="galleryItem">
+                  <img src="assets/50cent.jpg" alt="50 cent posing with his hands together">
+                  <div class="overlay">
+                    <p class="textOverlay">2000s</p>
+                  </div>
+                </div>
+              </label>
+              <label for="2010">
+                <div class="galleryItem"><img src="assets/drake.jpg" alt="drake with a tootpic">
+                  <div class="overlay">
+                    <p class="textOverlay drake">EARLY 2010s</p>
+                  </div>
+                </div>
+              </label>
+              <label for="present">
+                <div class="galleryItem"><img src="assets/migos.jpg" alt="all 3 members of migos posing">
+                  <div class="overlay">
+                    <p class="textOverlay">Present</p>
+                  </div>
+                </div>
+              </label>
+            </div>
           </fieldset>
-          <div class="gallery">
-            <div class="galleryItem">
-              <img src="assets/50cent.jpg" alt="50 cent posing with his hands together">
-              <div class="overlay">
-                <p class="textOverlay">2000s</p>
-              </div>
-            </div>
-            <div class="galleryItem"><img src="assets/drake.jpg" alt="drake with a tootpic">
-              <div class="overlay">
-                <p class="textOverlay drake">Early 2010s</p>
-              </div>
-            </div>
-            <div class="galleryItem"><img src="assets/migos.jpg" alt="all 3 members of migos posing">
-              <div class="overlay">
-                <p class="textOverlay">Present</p>
-              </div>
-            </div>
-          </div>
         </div>
-        </div>
-        <div class="secondSection section">
-          <div class="wrapper">
+      </div>
+      <div class="secondSection section">
+        <div class="wrapper">
           <fieldset class="region">
-            <h2>Choose a region:</h2>
-            <select name="selectRegion" id="" required>
-              <option value="east" name="region">East</option>
-              <option value="west" name="region">West</option>
-              <option value="south" name="region">South</option>
-            </select>
+            <h2>Select a region:</h2>
+            <input type="radio" name="region" value="east" id="east">
+            <input type="radio" name="region" value="west" id="west">
+            <input type="radio" name="region" value="south" id="south">
+            <div class="gallery galleryTwo">
+              <label for="east">
+                <div class="galleryItem"><img src="assets/nas2.jpg" alt="jadakiss posing">
+                  <div class="overlay">
+                    <p class="textOverlay">East</p>
+                  </div>
+                </div>
+              </label>
+              <label for="west">
+                <div class="galleryItem"><img src="assets/snoopdogg.jpg" alt="snoop dogg posing">
+                  <div class="overlay">
+                    <p class="textOverlay">West</p>
+                  </div>
+                </div>
+              </label>
+              <label for="south">
+                <div class="galleryItem"><img src="assets/outkast2.jpg" alt="members of cash money millionaires posing">
+                  <div class="overlay">
+                    <p class="textOverlay">South</p>
+                  </div>
+                </div>
+              </label>
+            </div>
           </fieldset>
-          <div class="gallery">
-            <div class="galleryItem"><img src="assets/nas2.jpg" alt="jadakiss posing">
-              <div class="overlay">
-                <p class="textOverlay">East</p>
-              </div>
-            </div>
-            <div class="galleryItem"><img src="assets/snoopdogg.jpg" alt="snoop dogg posing">
-              <div class="overlay">
-                <p class="textOverlay">West</p>
-              </div>
-            </div>
-            <div class="galleryItem"><img src="assets/outkast2.jpg" alt="members of cash money millionaires posing">
-              <div class="overlay">
-                <p class="textOverlay">South</p>
-              </div>
-            </div>
-          </div>
-          </div>
         </div>
-        <div class="thirdSection section">
-          <div class="wrapper">
+      </div>
+      <div class="thirdSection section">
+        <div class="wrapper">
           <fieldset class="style">
-            <h2>Choose a style:</h2>
-            <select name="selectStyle" id="" required>
-              <!-- <option value="" selected disabled hidden></option> -->
-              <option value="aggressive" name="style">Aggressive</option>
-              <option value="relaxed" name="style">Cool</option>
-              <option value="abstract" name="style">Abstract</option>
-            </select>
+            <h2>Select a style:</h2>
+            <input type="radio" name="style" value="aggressive" id="aggressive">
+            <input type="radio" name="style" value="relaxed" id="relaxed">
+            <input type="radio" name="style" value="abstract" id="abstract">
+            <div class="gallery galleryThree">
+              <label for="aggressive">
+                <div class="galleryItem"><img src="assets/wakaflocka.jpg"
+                    alt="waka flocka flame posing with crossed arms">
+                  <div class="overlay">
+                    <p class="textOverlay textAggressive">Aggressive</p>
+                  </div>
+                </div>
+              </label>
+              <label for="relaxed">
+                <div class="galleryItem"><img src="assets/jayzsuit.jpg" alt="pimp c posing">
+                  <div class="overlay">
+                    <p class="textOverlay">Cool</p>
+                  </div>
+                </div>
+              </label>
+              <label for="abstract">
+                <div class="galleryItem"><img src="assets/desiigner.jpg"
+                    alt="gucci mane doing a universal sign for money">
+                  <!-- <div class="highlight"></div> -->
+                  <div class="overlay">
+                    <p class="textOverlay">Abstract</p>
+                  </div>
+                </div>
+              </label>
+            </div>
           </fieldset>
-          <div class="gallery">
-            <div class="galleryItem"><img src="assets/wakaflocka.jpg" alt="waka flocka flame posing with crossed arms">
-              <div class="overlay">
-                <p class="textOverlay textAggressive">Aggressive</p>
-              </div>
-            </div>
-            <div class="galleryItem"><img src="assets/jayzsuit.jpg" alt="pimp c posing">
-              <div class="overlay">
-                <p class="textOverlay">Cool</p>
-              </div>
-            </div>
-            <div class="galleryItem"><img src="assets/desiigner.jpg" alt="gucci mane doing a universal sign for money">
-              <div class="overlay">
-                <p class="textOverlay">Abstract</p>
-              </div>
-            </div>
-          </div>
         </div>
-        </div>
-        <input type="submit" value="Let's hear it!">
-      </form>
-    </main>
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
-      integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
-    <script src="scripts/script.js"></script>
+      </div>
+      <input type="submit" value="Let's hear it!">
+    </form>
+  </main>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+    integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

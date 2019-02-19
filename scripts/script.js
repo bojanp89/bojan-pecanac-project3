@@ -14,13 +14,31 @@ myApp.sounds = [
     style: 'aggressive',
   },
   {
+    sound: '50cent2',
+    era: '2000',
+    region: 'east',
+    style: 'aggressive',
+  },
+  {
     sound: 'jayzYessir',
     era: '2000',
     region: 'east',
     style: 'relaxed'
   },
   {
+    sound: 'fatjoe',
+    era: '2000',
+    region: 'east',
+    style: 'relaxed'
+  },
+  {
     sound: 'camron',
+    era: '2000',
+    region: 'east',
+    style: 'relaxed'
+  },
+  {
+    sound: 'nas',
     era: '2000',
     region: 'east',
     style: 'relaxed'
@@ -68,6 +86,24 @@ myApp.sounds = [
     style: 'aggressive'
   },
   {
+    sound: 'liljon2',
+    era: '2000',
+    region: 'south',
+    style: 'aggressive'
+  },
+  {
+    sound: '36mafia',
+    era: '2000',
+    region: 'south',
+    style: 'aggressive'
+  },
+  {
+    sound: 'rickross',
+    era: '2000',
+    region: 'south',
+    style: 'aggressive'
+  },
+  {
     sound: 'pimpc',
     era: '2000',
     region: 'south',
@@ -75,6 +111,12 @@ myApp.sounds = [
   },
   {
     sound: 'lilwayne',
+    era: '2000',
+    region: 'south',
+    style: 'relaxed'
+  },
+  {
+    sound: 'youngjeezy',
     era: '2000',
     region: 'south',
     style: 'relaxed'
@@ -92,7 +134,19 @@ myApp.sounds = [
     style: 'abstract'
   },
   {
+    sound: 'mikejones',
+    era: '2000',
+    region: 'south',
+    style: 'abstract'
+  },
+  {
     sound: 'swizzbeats',
+    era: '2010',
+    region: 'east',
+    style: 'aggressive'
+  },
+  {
+    sound: 'nickiminaj',
     era: '2010',
     region: 'east',
     style: 'aggressive'
@@ -141,6 +195,12 @@ myApp.sounds = [
   },
   {
     sound: '2chainzTru',
+    era: '2010',
+    region: 'south',
+    style: 'relaxed'
+  },
+  {
+    sound: 'djkhaled',
     era: '2010',
     region: 'south',
     style: 'relaxed'
@@ -216,20 +276,60 @@ myApp.sounds = [
     era: 'present',
     region: 'south',
     style: 'abstract'
-  }
+  },
+  {
+    sound: 'takeoff',
+    era: 'present',
+    region: 'south',
+    style: 'abstract'
+  },
+  {
+    sound: 'youngthug',
+    era: 'present',
+    region: 'south',
+    style: 'abstract'
+  },
 ]
 
 $(function () {
 
+  
+  // $('label').removeClass('highlight');
+  $('input').on('focus', function(){
+    // let input = $(this)
+    // console.log(this)
+    let inputValue = $('input:checked').val();
+    console.log(inputValue)
+  })
+
+  $(function () {
+    $('.galleryOne .galleryItem').click(function () {
+      $('.galleryOne .galleryItem').removeClass('highlight');
+      $(this).addClass('highlight');
+    });
+  });
+  $(function () {
+    $('.galleryTwo .galleryItem').click(function () {
+      $('.galleryTwo .galleryItem').removeClass('highlight');
+      $(this).addClass('highlight');
+    });
+  });
+  $(function () {
+    $('.galleryThree .galleryItem').click(function () {
+      $('.galleryThree .galleryItem').removeClass('highlight');
+      $(this).addClass('highlight');
+    });
+  });
+
   // submit the form & prevent default
   $('form').on('submit', (event) => {
     event.preventDefault();
-
+    
     // every time we "submit", run the following code:
 
     // gather user input data by the value attribute
     let userEra = $('input[name=era]:checked').val();
-
+    // console.log(userEra)
     let userRegion = $('input[name=region]:checked').val();
 
     let userStyle = $('input[name=style]:checked').val();
