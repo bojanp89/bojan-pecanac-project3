@@ -151,28 +151,37 @@ header {
   height: 100vh; }
   header h1 {
     font-family: 'Fjalla One', sans-serif;
+    margin-top: 0;
+    padding-top: 100px;
     text-transform: uppercase;
     letter-spacing: 0.5vw;
     font-size: 8rem;
     line-height: 1.1;
-    color: #2d080a; }
+    color: #2d080a;
+    margin-left: -10px; }
     header h1 span {
       font-size: 8.1rem; }
-  header h2 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 4vw;
-    letter-spacing: 0.2vw;
-    margin-top: 0; }
   header i {
-    font-size: 8vw; }
+    font-size: 12vw;
+    color: black; }
 
 main h2 {
   font-size: 2rem;
   line-height: 1px;
-  font-family: 'Cantarell', sans-serif; }
+  font-family: 'Cantarell', sans-serif;
+  margin-bottom: 140px;
+  margin-top: 100px;
+  text-align: center; }
 
 label {
   max-width: calc(31%); }
+
+.galleryItem:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px black;
+  box-shadow: 0px 0px 0px 5px black;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .focussed {
   border: 1px solid red; }
@@ -195,18 +204,15 @@ label:nth-of-type(3) {
   left: 0; }
 
 .highlight {
-  border: 2px solid black;
+  z-index: 99;
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  z-index: 9;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 250, 250, 0.5)));
-  background: -webkit-linear-gradient(rgba(250, 250, 250, 0.5));
-  background: -o-linear-gradient(rgba(250, 250, 250, 0.5));
-  background: linear-gradient(rgba(250, 250, 250, 0.5)); }
+  -webkit-box-shadow: 0px 0px 0px 5px black;
+  box-shadow: 0px 0px 0px 5px black; }
 
 p.textOverlay {
   margin: 0;
@@ -220,6 +226,9 @@ p.textOverlay {
   text-transform: uppercase;
   margin-top: 70%;
   line-height: 1; }
+
+p.fiftycent {
+  text-transform: none; }
 
 p.drake {
   margin-top: 51%;
@@ -244,8 +253,31 @@ p.textAggressive {
   .section h2 {
     margin-left: -16px; }
 
+.thirdSection {
+  padding-bottom: 130px; }
+
 fieldset {
   border: none; }
+
+input[type="submit"] {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  background: #8c271e;
+  width: 100%;
+  font-size: 5rem;
+  margin-top: 0px;
+  padding-top: 20px;
+  border: none; }
+
+input[type="submit"]:hover {
+  border: 4px solid black; }
+
+input[type="radio"] {
+  display: none; }
 
 @media (min-width: 2200px) {
   main p.textOverlay {
@@ -258,3 +290,41 @@ fieldset {
 @media (min-width: 2700px) {
   main p.textOverlay {
     font-size: 2.3vw; } }
+
+@media (max-width: 950px) {
+  header h1 {
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 16vw; }
+    header h1 span {
+      font-size: 16.2vw; } }
+
+@media (max-width: 770px) {
+  .wrapper {
+    width: 90%; }
+  p.drake {
+    margin-top: 72%;
+    text-transform: none; } }
+
+@media (max-width: 650px) {
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .gallery label {
+      max-width: 70%;
+      margin-bottom: 30px; }
+    .gallery label:nth-of-type(1) {
+      margin-left: 0; }
+    .gallery label:nth-of-type(3) {
+      margin-right: 0; }
+    .gallery p.textOverlay {
+      font-size: 12vw; }
+    .gallery p.drake {
+      font-size: 11vw; }
+  main h2 {
+    letter-spacing: -3.5px; } }

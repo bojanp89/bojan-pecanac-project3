@@ -3,11 +3,19 @@ main {
     font-size: 2rem;
     line-height: 1px;
     font-family: 'Cantarell', sans-serif;
+    margin-bottom: 140px;
+    margin-top: 100px;
+    text-align: center;
   }
 }
 
 label {
   max-width: calc(31%);
+}
+
+.galleryItem:hover {
+    box-shadow: 0px 0px 0px 5px black;
+    transition: all 0.5s;
 }
 
 .focussed {
@@ -17,7 +25,6 @@ label {
 .galleryItem {
     max-width: 100%;
     position: relative;
-    // margin: 0 4%;
   }
 
 label:nth-of-type(1) {
@@ -37,18 +44,10 @@ label:nth-of-type(3) {
 }
 
 .highlight {
-  border: 2px solid black;
+  z-index: 99;
   transform: scale(1.5);
   transition: all 0.5s;
-  z-index: 9;
-  // box-shadow: 0px 0px 0px 5px black;
-  background: linear-gradient(rgba(250,250,250,0.5));
-  // position: absolute;
-  // display: none;
-  // top: 0;
-  // bottom: 0;
-  // right: 0;
-  // left: 0;
+  box-shadow: 0px 0px 0px 5px black;
 }
 
 p.textOverlay {
@@ -69,6 +68,10 @@ p.textOverlay {
   line-height: 1;
 }
 
+p.fiftycent {
+  text-transform: none;
+}
+
 p.drake {
   margin-top: 51%;
   font-size: 5vw;
@@ -86,8 +89,6 @@ p.textAggressive {
 }
 
 .section {
-  // border-top: 2px solid black;
-  // margin-bottom: 40px;
   background: #fafafa;
   padding: 50px 0 50px 0;
   h2 {
@@ -95,14 +96,28 @@ p.textAggressive {
   }
 }
 
+.thirdSection {
+  padding-bottom: 130px;
+}
+
 fieldset {
   border: none;
 }
-
-select {
-  // display: none;
+input[type="submit"] {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  align-self: center;
+  background: #8c271e;
+  width: 100%;
+  font-size: 5rem;
+  margin-top: 0px;
+  padding-top: 20px;
+  border: none;
 }
-
+input[type="submit"]:hover {
+  border: 4px solid black;
+}
 input[type="radio"] {
-  // display: none;
+  display: none;
 }

@@ -15,3 +15,52 @@
     font-size: 2.3vw;
   }
 }
+
+@media (max-width: 950px) {
+  header {
+      h1 {
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 16vw;
+    span {
+      font-size: 16.2vw;
+    }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .wrapper {
+    width: 90%;
+  }
+  p.drake {
+  margin-top: 72%;
+  text-transform: none;
+}
+}
+
+@media (max-width: 650px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    label {
+      max-width: 70%;
+      margin-bottom: 30px;
+    }
+    label:nth-of-type(1) {
+      margin-left: 0;
+    }
+    label:nth-of-type(3) {
+      margin-right: 0;
+    }
+    p.textOverlay {
+      font-size: 12vw;
+      }
+      p.drake {
+        font-size: 11vw,
+      }
+    }
+    main h2 {
+      letter-spacing: -3.5px;
+    }
+}
